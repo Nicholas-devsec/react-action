@@ -8,8 +8,6 @@ jobs:
 
   steps:
     - name: output github context
-      run: echo "${{ toJSON(github) }}"
+      run: echo "hello world"
      
       
-    
-  
