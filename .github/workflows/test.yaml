@@ -1,0 +1,20 @@
+name: rect demo
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: node js isntall
+        uses: actions/setup-node@v3
+      - name: install npm
+        with:
+          node-version: 18
+
+        use: npm ci
+      - name: run tests
+        use: npm test
