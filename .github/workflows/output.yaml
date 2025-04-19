@@ -1,13 +1,13 @@
-name: output 
+name: hello
 
 on: workflow_dispatch
 
 jobs:
-  info:
+  test:
     runs-on: ubuntu-latest
 
   steps:
-    - name: output github context
+    - name: 
       run: echo "hello world"
      
       
